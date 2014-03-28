@@ -1,0 +1,27 @@
+{
+  // Enforcing options
+  "latedef":   true,
+  "indent":    2,
+  "nonew":     true,
+  "quotmark":  "double",
+  "trailing":  true,
+  "undef":     true,
+  "unused":    "vars",
+
+  // Relaxing options
+  "laxcomma": true,
+
+  // Environments
+  "node": true,
+  "white": true,
+
+  "globals": {
+    "testRequire": false,
+    "describe": false,
+    "it": false,
+    "before": false,
+    "beforeEach": false,
+    "after": false,
+    "afterEach": false
+  }
+}

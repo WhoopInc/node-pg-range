@@ -9,6 +9,7 @@
   "unused":    "vars",
 
   // Relaxing options
+  "expr": true,
   "laxcomma": true,
 
   // Environments

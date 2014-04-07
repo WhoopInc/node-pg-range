@@ -1,0 +1,2 @@
+--check-leaks
+--require test/setup.js

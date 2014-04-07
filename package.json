@@ -1,37 +1,41 @@
 {
-  "name": "pg-parse-timeranges",
-  "version": "0.0.1",
-  "description": "node-postgres plugin to parse tsrange, tstzrange, daterange columns",
+  "name": "pg-range",
+  "version": "0.1.0",
+  "description": "node-postgres plugin to parse range columns",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "make test"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/WhoopInc/node-pg-parse-timeranges"
+    "url": "git://github.com/WhoopInc/node-pg-range"
   },
   "keywords": [
     "postgres",
     "parsing",
     "type",
     "conversion",
+    "range",
     "timerange",
-    "timeranges",
     "tsrange",
     "tstzrange",
     "daterange"
   ],
   "author": "Nikhil Benesch <benesch@whoop.com>",
-  "license": "Reserved",
+  "license": "All rights reserved",
   "bugs": {
-    "url": "https://github.com/WhoopInc/node-pg-parse-timeranges/issues"
+    "url": "https://github.com/WhoopInc/node-pg-range/issues"
   },
-  "homepage": "https://github.com/WhoopInc/node-pg-parse-timeranges",
+  "private": true,
+  "homepage": "https://github.com/WhoopInc/node-pg-range",
   "devDependencies": {
     "mocha": "^1.18.2",
-    "pg": "^2.11.1",
-    "okay": "^0.3.0",
-    "lodash": "^2.4.1",
-    "async": "^0.2.10"
+    "pg": "^3.0.0",
+    "chai": "^1.9.1",
+    "sinon": "^1.9.1",
+    "sinon-chai": "^2.5.0"
+  },
+  "dependencies": {
+    "lodash": "^2.4.1"
   }
 }

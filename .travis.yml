@@ -8,3 +8,7 @@ before_script:
   - createdb
 addons:
   postgresql: "9.3"
+notifications:
+  hipchat:
+    rooms:
+      secure: Q/Rlseyo/iB7NVGhI6b5je8LHLpcEpkQZdgfUZCvwhbqZtvrIDiZ2UR9RdLvf+60qLgESuY58JwtRDEMRbximj92PdpA7RR/9KvSmT5KSB5EVVwM7GFtLZChiSztk9VDt43KvizG+1kXbf/cfEu5OdLJ+PZsg5d/yNEXMsYhAXE=

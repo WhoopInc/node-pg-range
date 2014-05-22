@@ -1,5 +1,10 @@
 # node-pg-range
 
+<a href="https://magnum.travis-ci.com/WhoopInc/node-pg-range">
+  <img src="https://magnum.travis-ci.com/WhoopInc/node-pg-range.svg?token=h1KJ7aVtpdmBGisUgZPG&amp;branch=master"
+    align="right">
+</a>
+
 Range type support for [node-postgres][node-postgres].
 
 ## Usage

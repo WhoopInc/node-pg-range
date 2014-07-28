@@ -14,10 +14,10 @@ describe("Range", function () {
       range.should.be.an.instanceOf(Range);
     });
 
-    it("should reject ranges where lower > upper", function () {
+    it("should not reject ranges where lower > upper", function () {
       (function () {
         Range(2, 1, "[]");
-      }).should.throw(/invalid range/);
+      }).should.not.throw();
     });
 
     it("should reject ranges with invalid string bounds", function () {

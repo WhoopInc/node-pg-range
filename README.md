@@ -1,7 +1,7 @@
 # node-pg-range
 
-<a href="https://magnum.travis-ci.com/WhoopInc/node-pg-range">
-  <img src="https://magnum.travis-ci.com/WhoopInc/node-pg-range.svg?token=h1KJ7aVtpdmBGisUgZPG&amp;branch=master"
+<a href="https://travis-ci.org/WhoopInc/node-pg-range">
+  <img src="https://travis-ci.org/WhoopInc/node-pg-range.svg?branch=master"
     align="right">
 </a>
 

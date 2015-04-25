@@ -26,7 +26,6 @@
   "bugs": {
     "url": "https://github.com/WhoopInc/node-pg-range/issues"
   },
-  "private": true,
   "homepage": "https://github.com/WhoopInc/node-pg-range",
   "devDependencies": {
     "mocha": "^1.18.2",

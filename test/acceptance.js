@@ -36,7 +36,6 @@ describe("acceptance", function () {
         }
 
         var row = result.rows.pop();
-        console.log(row.range);
         row.range.should.be.an.instanceOf(Range);
         should.equal(val(row.range.lower), val(rangeOut.lower));
         should.equal(val(row.range.upper), val(rangeOut.upper));

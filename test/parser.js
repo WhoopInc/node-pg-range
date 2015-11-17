@@ -21,64 +21,64 @@ describe("parser", function () {
   describe(".parseRange", function () {
     it("should parse [] finite ranges", function () {
       var range = parser.parseRange(_.identity, "[1,2]");
-      range.lower.should.equal("1");
-      range.upper.should.equal("2");
+      range.begin.should.equal("1");
+      range.end.should.equal("2");
       range.bounds.should.equal("[]");
     });
 
     it("should parse [) finite ranges", function () {
       var range = parser.parseRange(_.identity, "[1,2)");
-      range.lower.should.equal("1");
-      range.upper.should.equal("2");
+      range.begin.should.equal("1");
+      range.end.should.equal("2");
       range.bounds.should.equal("[)");
     });
 
     it("should parse (] finite ranges", function () {
       var range = parser.parseRange(_.identity, "(1,2]");
-      range.lower.should.equal("1");
-      range.upper.should.equal("2");
+      range.begin.should.equal("1");
+      range.end.should.equal("2");
       range.bounds.should.equal("(]");
     });
 
     it("should parse () finite ranges", function () {
       var range = parser.parseRange(_.identity, "(1,2)");
-      range.lower.should.equal("1");
-      range.upper.should.equal("2");
+      range.begin.should.equal("1");
+      range.end.should.equal("2");
       range.bounds.should.equal("()");
     });
 
     it("should parse quoted range bounds", function () {
       var range = parser.parseRange(_.identity, '("1, 2","3, 4")'); // jshint ignore:line
-      range.lower.should.equal("1, 2");
-      range.upper.should.equal("3, 4");
+      range.begin.should.equal("1, 2");
+      range.end.should.equal("3, 4");
     });
 
     it("should unescape quoted range bounds", function () {
       // jshint ignore:start
       var range = parser.parseRange(_.identity, '("\\"cows\\"","\\"moos\\"")');
-      range.lower.should.equal('"cows"');
-      range.upper.should.equal('"moos"');
+      range.begin.should.equal('"cows"');
+      range.end.should.equal('"moos"');
       // jshint ignore:end
     });
 
-    it("should parse lower bound infinite ranges", function () {
+    it("should parse begin bound infinite ranges", function () {
       var range = parser.parseRange(_.identity, "[,2)");
-      should.not.exist(range.lower);
-      range.upper.should.equal("2");
+      should.not.exist(range.begin);
+      range.end.should.equal("2");
       range.bounds.should.equal("[)");
     });
 
-    it("should parse upper bound infinite ranges", function () {
+    it("should parse end bound infinite ranges", function () {
       var range = parser.parseRange(_.identity, "[2,)");
-      range.lower.should.equal("2");
-      should.not.exist(range.upper);
+      range.begin.should.equal("2");
+      should.not.exist(range.end);
       range.bounds.should.equal("[)");
     });
 
     it("should parse both bound infinite ranges", function () {
       var range = parser.parseRange(_.identity, "[,)");
-      should.not.exist(range.lower);
-      should.not.exist(range.upper);
+      should.not.exist(range.begin);
+      should.not.exist(range.end);
       range.bounds.should.equal("[)");
     });
   });

@@ -20,24 +20,12 @@ describe("Range", function () {
       }).should.not.throw();
     });
 
-    it("should reject ranges with invalid string bounds", function () {
-      (function () {
-        Range(7, 9, ")(");
-      }).should.throw(/invalid bounds/);
-    });
-
-    it("should reject ranges with non-string bounds", function () {
-      (function () {
-        Range(7, 9, {});
-      }).should.throw(/invalid bounds/);
-    });
-
-    it("should use default bounds [) if unspecified", function () {
-      Range(1, 2).bounds.should.equal("[)");
+    it("should use default bounds [] if unspecified", function () {
+      Range(1, 2).bounds.should.equal("[]");
     });
 
     it("should support empty ranges", function () {
-      Range().empty.should.be.true;
+      Range().isEmpty().should.be.true;
     });
   });
 
@@ -106,32 +94,6 @@ describe("Range", function () {
     describe("when given an empty range", function () {
       it("returns empty range literal", function () {
         toPostgres().should.equal("empty");
-      });
-    });
-  });
-
-  describe("toJSON", function () {
-    it("handles finite ranges", function () {
-      Range(1, 2, "[]").toJSON().should.deep.equal({
-        lower: 1,
-        upper: 2,
-        bounds: "[]"
-      });
-    });
-
-    it("handles infinite ranges", function () {
-      Range(null, null, "[]").toJSON().should.deep.equal({
-        lower: null,
-        upper: null,
-        bounds: "[]"
-      });
-    });
-
-    it("handles empty ranges", function () {
-      Range().toJSON().should.deep.equal({
-        lower: null,
-        upper: null,
-        bounds: null
       });
     });
   });

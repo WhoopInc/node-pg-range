@@ -28,7 +28,7 @@ client.query("SELECT range FROM table", function (result) {
 });
 ```
 
-Or go the other way:
+Or make a query that inserts range objects:
 
 ```javascript
 var Range = require("pg-range").Range;

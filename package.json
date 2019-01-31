@@ -1,6 +1,6 @@
 {
   "name": "pg-range",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "node-postgres plugin to parse range columns",
   "main": "index.js",
   "scripts": {

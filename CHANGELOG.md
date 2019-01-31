@@ -1,3 +1,7 @@
+## 1.0.1 / 31 January 2019
+
+* Bump dependencies. This notably silences a `npm audit` warning [#7].
+
 ## 1.0.0 / 24 July 2016
 
 * Subclass returned `Range` objects from [js-strange] objects to provide
@@ -21,3 +25,4 @@
 * Support returning range object from queries.
 
 [js-strange]: https://github.com/moll/js-strange
+[#7]: https://github.com/WhoopInc/node-pg-range/issues/7

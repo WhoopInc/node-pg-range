@@ -20,6 +20,10 @@ describe("acceptance", function () {
     client.connect();
   });
 
+  after(function() {
+    client.end();
+  })
+
   function create(type, done) {
     client.query("CREATE TEMP TABLE ranges (range " + type + ")", done);
   }

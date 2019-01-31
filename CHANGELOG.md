@@ -1,6 +1,7 @@
 ## 1.0.1 / 31 January 2019
 
 * Bump dependencies. This notably silences a `npm audit` warning [#7].
+* Drop support for Node versions 4.x and earlier.
 
 ## 1.0.0 / 24 July 2016
 

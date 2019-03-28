@@ -1,3 +1,7 @@
+## 1.1.0 / 28 March 2019
+
+* Bundle TypeScript definitions [#10]. Thanks, [@cliedeman]!
+
 ## 1.0.1 / 31 January 2019
 
 * Bump dependencies. This notably silences a `npm audit` warning [#7].
@@ -25,5 +29,7 @@
 * Initial release.
 * Support returning range object from queries.
 
+[@cliedeman]: https://github.com/cliedeman
 [js-strange]: https://github.com/moll/js-strange
 [#7]: https://github.com/WhoopInc/node-pg-range/issues/7
+[#10]: https://github.com/WhoopInc/node-pg-range/issues/10

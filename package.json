@@ -10,6 +10,11 @@
     "type": "git",
     "url": "git://github.com/WhoopInc/node-pg-range"
   },
+  "files": [
+    "lib",
+    "index.js",
+    "index.d.ts"
+  ],
   "keywords": [
     "postgres",
     "parsing",

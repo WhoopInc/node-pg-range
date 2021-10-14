@@ -1,3 +1,7 @@
+## 1.1.1 / 14 October 2021
+
+* Depend on stRange.js types [#14]. Thanks, [@bdbaraban]!
+
 ## 1.1.0 / 28 March 2019
 
 * Bundle TypeScript definitions [#10]. Thanks, [@cliedeman]!
@@ -29,7 +33,9 @@
 * Initial release.
 * Support returning range object from queries.
 
+[@bdbaraban]: https://github.com/bdbaraban
 [@cliedeman]: https://github.com/cliedeman
 [js-strange]: https://github.com/moll/js-strange
 [#7]: https://github.com/WhoopInc/node-pg-range/issues/7
 [#10]: https://github.com/WhoopInc/node-pg-range/issues/10
+[#14]: https://github.com/WhoopInc/node-pg-range/issues/14

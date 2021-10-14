@@ -41,6 +41,7 @@
     "sinon-test": "^2.4.0"
   },
   "dependencies": {
+    "@types/strange": "^1.7.1",
     "lodash.partial": "^4.2.1",
     "strange": "^1.7.2"
   }

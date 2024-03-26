@@ -1,3 +1,5 @@
+## Notice: This repository is no longer maintained as of 3/26/2024
+
 # node-pg-range
 
 <a href="https://travis-ci.org/WhoopInc/node-pg-range">
